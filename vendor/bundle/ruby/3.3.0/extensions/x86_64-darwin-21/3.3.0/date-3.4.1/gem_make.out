@@ -1,0 +1,25 @@
+current directory: /Users/decabits/Desktop/personal/url_shortener/vendor/bundle/ruby/3.3.0/gems/date-3.4.1/ext/date
+/Users/decabits/.rvm/rubies/ruby-3.3.0/bin/ruby extconf.rb
+checking for rb_category_warn()... yes
+checking for timezone in time.h with  -Werror... yes
+checking for altzone in time.h with  -Werror... no
+creating Makefile
+
+current directory: /Users/decabits/Desktop/personal/url_shortener/vendor/bundle/ruby/3.3.0/gems/date-3.4.1/ext/date
+make DESTDIR\= sitearchdir\=./.gem.20241202-24076-i3fr2b sitelibdir\=./.gem.20241202-24076-i3fr2b clean
+
+current directory: /Users/decabits/Desktop/personal/url_shortener/vendor/bundle/ruby/3.3.0/gems/date-3.4.1/ext/date
+make DESTDIR\= sitearchdir\=./.gem.20241202-24076-i3fr2b sitelibdir\=./.gem.20241202-24076-i3fr2b
+compiling date_core.c
+compiling date_parse.c
+compiling date_strftime.c
+compiling date_strptime.c
+linking shared-object date_core.bundle
+ld: warning: -undefined dynamic_lookup may not work with chained fixups
+
+current directory: /Users/decabits/Desktop/personal/url_shortener/vendor/bundle/ruby/3.3.0/gems/date-3.4.1/ext/date
+make DESTDIR\= sitearchdir\=./.gem.20241202-24076-i3fr2b sitelibdir\=./.gem.20241202-24076-i3fr2b install
+/usr/local/opt/coreutils/bin/ginstall -c -m 0755 date_core.bundle ./.gem.20241202-24076-i3fr2b
+
+current directory: /Users/decabits/Desktop/personal/url_shortener/vendor/bundle/ruby/3.3.0/gems/date-3.4.1/ext/date
+make DESTDIR\= sitearchdir\=./.gem.20241202-24076-i3fr2b sitelibdir\=./.gem.20241202-24076-i3fr2b clean

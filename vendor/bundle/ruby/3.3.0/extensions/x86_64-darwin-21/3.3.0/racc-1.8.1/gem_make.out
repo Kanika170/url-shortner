@@ -1,0 +1,19 @@
+current directory: /Users/decabits/Desktop/personal/url_shortener/vendor/bundle/ruby/3.3.0/gems/racc-1.8.1/ext/racc/cparse
+/Users/decabits/.rvm/rubies/ruby-3.3.0/bin/ruby extconf.rb
+creating Makefile
+
+current directory: /Users/decabits/Desktop/personal/url_shortener/vendor/bundle/ruby/3.3.0/gems/racc-1.8.1/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20241202-24076-jtzf3p sitelibdir\=./.gem.20241202-24076-jtzf3p clean
+
+current directory: /Users/decabits/Desktop/personal/url_shortener/vendor/bundle/ruby/3.3.0/gems/racc-1.8.1/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20241202-24076-jtzf3p sitelibdir\=./.gem.20241202-24076-jtzf3p
+compiling cparse.c
+linking shared-object racc/cparse.bundle
+ld: warning: -undefined dynamic_lookup may not work with chained fixups
+
+current directory: /Users/decabits/Desktop/personal/url_shortener/vendor/bundle/ruby/3.3.0/gems/racc-1.8.1/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20241202-24076-jtzf3p sitelibdir\=./.gem.20241202-24076-jtzf3p install
+/usr/local/opt/coreutils/bin/ginstall -c -m 0755 cparse.bundle ./.gem.20241202-24076-jtzf3p/racc
+
+current directory: /Users/decabits/Desktop/personal/url_shortener/vendor/bundle/ruby/3.3.0/gems/racc-1.8.1/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20241202-24076-jtzf3p sitelibdir\=./.gem.20241202-24076-jtzf3p clean

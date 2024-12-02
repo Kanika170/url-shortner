@@ -1,0 +1,19 @@
+current directory: /Users/decabits/Desktop/personal/url_shortener/vendor/bundle/ruby/3.3.0/gems/bindex-0.8.1/ext/skiptrace
+/Users/decabits/.rvm/rubies/ruby-3.3.0/bin/ruby extconf.rb
+creating Makefile
+
+current directory: /Users/decabits/Desktop/personal/url_shortener/vendor/bundle/ruby/3.3.0/gems/bindex-0.8.1/ext/skiptrace
+make DESTDIR\= sitearchdir\=./.gem.20241202-24076-8n0yer sitelibdir\=./.gem.20241202-24076-8n0yer clean
+
+current directory: /Users/decabits/Desktop/personal/url_shortener/vendor/bundle/ruby/3.3.0/gems/bindex-0.8.1/ext/skiptrace
+make DESTDIR\= sitearchdir\=./.gem.20241202-24076-8n0yer sitelibdir\=./.gem.20241202-24076-8n0yer
+compiling cruby.c
+linking shared-object skiptrace/internal/cruby.bundle
+ld: warning: -undefined dynamic_lookup may not work with chained fixups
+
+current directory: /Users/decabits/Desktop/personal/url_shortener/vendor/bundle/ruby/3.3.0/gems/bindex-0.8.1/ext/skiptrace
+make DESTDIR\= sitearchdir\=./.gem.20241202-24076-8n0yer sitelibdir\=./.gem.20241202-24076-8n0yer install
+/usr/local/opt/coreutils/bin/ginstall -c -m 0755 cruby.bundle ./.gem.20241202-24076-8n0yer/skiptrace/internal
+
+current directory: /Users/decabits/Desktop/personal/url_shortener/vendor/bundle/ruby/3.3.0/gems/bindex-0.8.1/ext/skiptrace
+make DESTDIR\= sitearchdir\=./.gem.20241202-24076-8n0yer sitelibdir\=./.gem.20241202-24076-8n0yer clean

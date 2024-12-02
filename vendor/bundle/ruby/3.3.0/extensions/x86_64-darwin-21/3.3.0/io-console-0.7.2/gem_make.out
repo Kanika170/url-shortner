@@ -1,0 +1,28 @@
+current directory: /Users/decabits/Desktop/personal/url_shortener/vendor/bundle/ruby/3.3.0/gems/io-console-0.7.2/ext/io/console
+/Users/decabits/.rvm/rubies/ruby-3.3.0/bin/ruby extconf.rb
+checking for rb_io_path()... yes
+checking for rb_io_descriptor()... yes
+checking for rb_io_get_write_io()... yes
+checking for rb_io_closed_p()... yes
+checking for rb_io_open_descriptor()... yes
+checking for termios.h... yes
+checking for cfmakeraw() in termios.h... yes
+checking for sys/ioctl.h... yes
+checking for HAVE_RUBY_FIBER_SCHEDULER_H... yes
+creating Makefile
+
+current directory: /Users/decabits/Desktop/personal/url_shortener/vendor/bundle/ruby/3.3.0/gems/io-console-0.7.2/ext/io/console
+make DESTDIR\= sitearchdir\=./.gem.20241202-24076-ebfma7 sitelibdir\=./.gem.20241202-24076-ebfma7 clean
+
+current directory: /Users/decabits/Desktop/personal/url_shortener/vendor/bundle/ruby/3.3.0/gems/io-console-0.7.2/ext/io/console
+make DESTDIR\= sitearchdir\=./.gem.20241202-24076-ebfma7 sitelibdir\=./.gem.20241202-24076-ebfma7
+compiling console.c
+linking shared-object io/console.bundle
+ld: warning: -undefined dynamic_lookup may not work with chained fixups
+
+current directory: /Users/decabits/Desktop/personal/url_shortener/vendor/bundle/ruby/3.3.0/gems/io-console-0.7.2/ext/io/console
+make DESTDIR\= sitearchdir\=./.gem.20241202-24076-ebfma7 sitelibdir\=./.gem.20241202-24076-ebfma7 install
+/usr/local/opt/coreutils/bin/ginstall -c -m 0755 console.bundle ./.gem.20241202-24076-ebfma7/io
+
+current directory: /Users/decabits/Desktop/personal/url_shortener/vendor/bundle/ruby/3.3.0/gems/io-console-0.7.2/ext/io/console
+make DESTDIR\= sitearchdir\=./.gem.20241202-24076-ebfma7 sitelibdir\=./.gem.20241202-24076-ebfma7 clean

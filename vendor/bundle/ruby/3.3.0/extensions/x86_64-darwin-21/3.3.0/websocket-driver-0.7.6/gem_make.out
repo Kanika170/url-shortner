@@ -1,0 +1,19 @@
+current directory: /Users/decabits/Desktop/personal/url_shortener/vendor/bundle/ruby/3.3.0/gems/websocket-driver-0.7.6/ext/websocket-driver
+/Users/decabits/.rvm/rubies/ruby-3.3.0/bin/ruby extconf.rb
+creating Makefile
+
+current directory: /Users/decabits/Desktop/personal/url_shortener/vendor/bundle/ruby/3.3.0/gems/websocket-driver-0.7.6/ext/websocket-driver
+make DESTDIR\= sitearchdir\=./.gem.20241202-24076-lcncrq sitelibdir\=./.gem.20241202-24076-lcncrq clean
+
+current directory: /Users/decabits/Desktop/personal/url_shortener/vendor/bundle/ruby/3.3.0/gems/websocket-driver-0.7.6/ext/websocket-driver
+make DESTDIR\= sitearchdir\=./.gem.20241202-24076-lcncrq sitelibdir\=./.gem.20241202-24076-lcncrq
+compiling websocket_mask.c
+linking shared-object websocket_mask.bundle
+ld: warning: -undefined dynamic_lookup may not work with chained fixups
+
+current directory: /Users/decabits/Desktop/personal/url_shortener/vendor/bundle/ruby/3.3.0/gems/websocket-driver-0.7.6/ext/websocket-driver
+make DESTDIR\= sitearchdir\=./.gem.20241202-24076-lcncrq sitelibdir\=./.gem.20241202-24076-lcncrq install
+/usr/local/opt/coreutils/bin/ginstall -c -m 0755 websocket_mask.bundle ./.gem.20241202-24076-lcncrq
+
+current directory: /Users/decabits/Desktop/personal/url_shortener/vendor/bundle/ruby/3.3.0/gems/websocket-driver-0.7.6/ext/websocket-driver
+make DESTDIR\= sitearchdir\=./.gem.20241202-24076-lcncrq sitelibdir\=./.gem.20241202-24076-lcncrq clean
