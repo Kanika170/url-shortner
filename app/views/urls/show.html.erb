@@ -1,2 +1,28 @@
-<h1>Urls#show</h1>
-<p>Find me in app/views/urls/show.html.erb</p>
+<h1>URL Details</h1>
+
+<% if @url %>
+  <p>
+    <strong>Original URL:</strong>
+    <%= link_to @url.original_url, @url.original_url, target: "_blank" %>
+  </p>
+  
+  <p>
+    <strong>Shortened URL:</strong>
+    <%= link_to "http://#{request.host_with_port}/#{@url.short_url}", "/#{@url.short_url}", target: "_blank" %>
+  </p>
+  
+  <p>
+    <strong>Created At:</strong>
+    <%= @url.created_at.strftime("%B %d, %Y %H:%M") %>
+  </p>
+  
+  <p>
+    <strong>Updated At:</strong>
+    <%= @url.updated_at.strftime("%B %d, %Y %H:%M") %>
+  </p>
+
+<% else %>
+  <p>URL not found.</p>
+<% end %>
+
+<%= link_to 'Back to URLs', urls_path %>

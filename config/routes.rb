@@ -10,9 +10,9 @@ Rails.application.routes.draw do
   # Defines the root path route ("/")
   # root "posts#index"
   resources :urls, only: [:new, :create, :show]
-  get '/:short_url', to: 'urls#show', as: :short
+  get '/:short_url', to: 'urls#redirect', as: :short
 
   namespace :api do
-    resources :urls, only: [:create]
+    resources :urls, only: [:create, :show]
   end
 end

@@ -13,8 +13,18 @@ class UrlsController < ApplicationController
   end
 
   def show
-    @url = Url.find_by(short_url: params[:id])
-    redirect_to @url.original_url if @url
+    @url = Url.find_by(id: params[:id])
+    render :show
+  end
+
+  def redirect
+    @url = Url.find_by(short_url: params[:short_url])
+    
+    if @url
+      redirect_to @url.original_url, allow_other_host: true
+    else
+      render json: { error: 'URL not found' }, status: :not_found
+    end
   end
 
   private
