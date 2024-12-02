@@ -11,4 +11,8 @@ Rails.application.routes.draw do
   # root "posts#index"
   resources :urls, only: [:new, :create, :show]
   get '/:short_url', to: 'urls#show', as: :short
+
+  namespace :api do
+    resources :urls, only: [:create]
+  end
 end
