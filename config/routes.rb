@@ -13,6 +13,6 @@ Rails.application.routes.draw do
   get '/:short_url', to: 'urls#redirect', as: :short
 
   namespace :api do
-    resources :urls, only: [:create, :show]
+    resources :urls, param: :short_url, only: [:create, :show]
   end
 end
