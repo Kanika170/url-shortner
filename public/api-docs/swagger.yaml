@@ -1,0 +1,47 @@
+---
+openapi: 3.0.1
+info:
+  title: API V1
+  version: v1
+paths:
+  "/api/urls":
+    post:
+      summary: Shortens a URL
+      description: Creates a new shortened URL from the original URL.
+      parameters: []
+      security:
+      - Bearer: []
+      responses:
+        '201':
+          description: URL shortened successfully
+        '422':
+          description: Invalid URL
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                original_url:
+                  type: string
+                  example: https://example.com
+              required:
+              - original_url
+  "/api/urls/{short_url}":
+    get:
+      summary: Retrieves the original URL from the short URL
+      description: Fetches the original URL for a given shortened URL.
+      parameters:
+      - name: short_url
+        in: path
+        example: 28c008
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: URL found
+        '404':
+          description: URL not found
+servers:
+- url: http://localhost:3000/
