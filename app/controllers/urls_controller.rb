@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class UrlsController < ApplicationController
   def new
     @url = Url.new
@@ -19,7 +21,7 @@ class UrlsController < ApplicationController
 
   def redirect
     @url = Url.find_by(short_url: params[:short_url])
-    
+
     if @url
       redirect_to @url.original_url, allow_other_host: true
     else

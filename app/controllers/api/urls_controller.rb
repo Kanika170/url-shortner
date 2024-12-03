@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module Api
   class UrlsController < ApplicationController
     skip_before_action :verify_authenticity_token
@@ -8,7 +10,7 @@ module Api
       url = Url.new(url_params)
 
       if url.save
-        render_success("URL shortened successfully", generate_short_url(url.short_url))
+        render_success('URL shortened successfully', generate_short_url(url.short_url))
       else
         render_error(url.errors.full_messages, :unprocessable_entity)
       end
@@ -19,9 +21,9 @@ module Api
       url = Url.find_by(short_url: params[:short_url])
 
       if url
-        render json: { 
-          original_url: url.original_url, 
-          short_url: generate_short_url(url.short_url) 
+        render json: {
+          original_url: url.original_url,
+          short_url: generate_short_url(url.short_url)
         }, status: :ok
       else
         render_error('URL not found', :not_found)
@@ -36,9 +38,9 @@ module Api
 
     def authenticate_request!
       token = request.headers['Authorization']&.split(' ')&.last
-      unless token && ActiveSupport::SecurityUtils.secure_compare(token, ENV.fetch('TOKEN', ''))
-        render_error('Unauthorized access', :unauthorized)
-      end
+      return if token && ActiveSupport::SecurityUtils.secure_compare(token, ENV.fetch('TOKEN', ''))
+
+      render_error('Unauthorized access', :unauthorized)
     end
 
     def generate_short_url(short_url_segment)
